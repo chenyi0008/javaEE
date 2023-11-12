@@ -12,6 +12,7 @@
 
   <modules>
     <module>springmvc1</module>
+    <module>springmvc2</module>
   </modules>
   <name>parent</name>
   <!-- FIXME change it to the project's website -->
