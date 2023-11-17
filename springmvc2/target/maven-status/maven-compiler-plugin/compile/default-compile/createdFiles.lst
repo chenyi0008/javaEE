@@ -1,11 +1,12 @@
 com\chen\config\SpringConfig.class
-com\chen\dao\CourseDao.class
-com\chen\config\ServletConfig.class
 com\chen\controller\CourseController.class
 com\chen\domain\Course.class
 com\chen\config\ApplicationContextProvider.class
 com\chen\config\SpringMvcConfig.class
 com\chen\service\CourseService.class
+com\chen\dao\CourseDao.class
+com\chen\config\ServletConfig.class
+com\chen\utils\DateTimeValidator.class
 com\chen\service\impl\CourseServiceImpl.class
 com\chen\config\JdbcConfig.class
 com\chen\config\MyBatisConfig.class

@@ -20,41 +20,14 @@
     List<Course> courseList = courseDao.getAll();
 %>
 
-<%
-    // Handle the form submission
-    if (request.getMethod().equalsIgnoreCase("post")) {
-        String time = request.getParameter("time");
-        String name = request.getParameter("name");
-        String description = request.getParameter("description");
 
-        // Validate the inputs (you may need more robust validation)
-        if (time != null && name != null && description != null) {
-            Course newCourse = new Course();
-            newCourse.setTime(time);
-            newCourse.setName(name);
-            newCourse.setDescription(description);
-
-            // Save the new course to the database using CourseDao
-            courseDao.save(newCourse);
-            System.out.println(newCourse.toString());
-
-            // Redirect to the course list page or show a success message
-//            response.sendRedirect("/");
-            return;
-        } else {
-            // Handle validation errors, if any
-            // You can set attributes to show error messages on the form
-            // For simplicity, let's just print an error message here
-            System.out.println("Invalid input. Please fill in all fields.");
-        }
-    }
-%>
 
 
 <html>
 <body>
-<h2>Hello World!</h2>
-
+<h2>查询</h2>
+<button onclick="location.href='add.jsp'">添加</button>
+<button onclick="location.href='update.jsp'">修改</button>
 <table border="1" align="center">
     <thead>
     <tr>
@@ -85,16 +58,6 @@
 
     </tbody>
 </table>
-</body>
-
-<body>
-<h2>Add New Course</h2>
-<form method="post" action="/course" enctype="application/x-www-form-urlencoded">
-    Time: <input type="text" name="time" placeholder="yyyy-MM-dd HH:mm:ss" required><br>
-    Name: <input type="text" name="name" required><br>
-    Description: <textarea name="description" rows="4" required></textarea><br>
-    <input type="submit" value="Add Course">
-</form>
 </body>
 
 

@@ -2,6 +2,7 @@ package com.chen.controller;
 
 import com.chen.domain.Course;
 import com.chen.service.CourseService;
+import com.chen.utils.DateTimeValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,13 +20,18 @@ public class CourseController {
     @PostMapping()
     public String save(Course course) {
         System.out.println(course.toString());
+        if(
+                course.getDescription().length() < 10 ||
+                course.getName().length() < 5 ||
+                DateTimeValidator.isValidDateTimeFormat(course.getTime()))
         courseService.save(course);
         return "redirect:/";
     }
 
-    @PutMapping
-    public boolean update(@RequestBody Course course) {
-        return courseService.update(course);
+    @PostMapping("/update")
+    public String update(Course course) {
+        courseService.save(course);
+        return "redirect:/";
     }
 
     @DeleteMapping("/{id}")
@@ -34,6 +40,7 @@ public class CourseController {
     }
 
     @GetMapping("/{id}")
+    @ResponseBody
     public Course getById(@PathVariable Integer id) {
         return courseService.getById(id);
     }
