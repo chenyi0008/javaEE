@@ -25,8 +25,8 @@
 <html>
 <body>
 <h2>查询</h2>
-<button onclick="location.href='jsp/add.jsp'">添加</button>
-<button onclick="location.href='jsp/update.jsp'">修改</button>
+<button onclick="location.href='add.jsp'">添加</button>
+<button onclick="location.href='update.jsp'">修改</button>
 <table border="1" align="center">
     <thead>
     <tr>
