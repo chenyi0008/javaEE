@@ -85,3 +85,9 @@
 0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:46:09 +0800] "GET /update.jsp HTTP/1.1" 200 2743 http-bio-8088-exec-4 17
 0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:46:12 +0800] "GET /course/30 HTTP/1.1" 200 82 http-bio-8088-exec-6 234
 0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:46:15 +0800] "GET /course?course=30&name=321333&description=321333&time=2023-11-19+12%3A30%3A00 HTTP/1.1" 200 3987 http-bio-8088-exec-7 41
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:04 +0800] "GET /course?course=30&name=321333&description=321333&time=2023-11-19+12%3A30%3A00 HTTP/1.1" 200 3987 http-bio-8088-exec-1 1186
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:08 +0800] "GET /update.jsp HTTP/1.1" 200 2751 http-bio-8088-exec-4 824
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:10 +0800] "GET /course/30 HTTP/1.1" 200 82 http-bio-8088-exec-5 110
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:13 +0800] "POST /course/update HTTP/1.1" 302 - http-bio-8088-exec-6 133
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:13 +0800] "GET / HTTP/1.1" 200 4133 http-bio-8088-exec-7 13
+0:0:0:0:0:0:0:1 - - [17/Nov/2023:15:50:49 +0800] "GET /add.jsp HTTP/1.1" 200 481 http-bio-8088-exec-8 13

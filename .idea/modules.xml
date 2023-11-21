@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/javaEE.iml" filepath="$PROJECT_DIR$/.idea/javaEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jsp/springboot-jsp.iml" filepath="$PROJECT_DIR$/springboot-jsp/springboot-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot1/springboot1.iml" filepath="$PROJECT_DIR$/springboot1/springboot1.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc1/springmvc1.iml" filepath="$PROJECT_DIR$/springmvc1/springmvc1.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc2/springmvc2.iml" filepath="$PROJECT_DIR$/springmvc2/springmvc2.iml" />
     </modules>
