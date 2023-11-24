@@ -48,7 +48,6 @@
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var course = JSON.parse(xhr.responseText);
                 document.getElementById("name").value = course.name;
-                document.getElementById("name").value = course.name;
                 document.getElementById("description").value = course.description;
                 document.getElementById("time").value = course.time;
             }

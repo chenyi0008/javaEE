@@ -2,7 +2,7 @@
 <html>
 
 <body>
-<h1>Login Page</h1>
+
 
 <%--<form action="/user/login" method="post">--%>
 <%--    <label for="username">Username:</label>--%>
@@ -90,7 +90,7 @@
                 console.log(data)
                 if (data.data == 'succeed') {
                     // Redirect to /jsp/index.jsp if the result is 'succeed'
-                    window.location.href = '/jsp/index.jsp';
+                    window.location.href = 'index.jsp';
                 } else {
                     // Show an alert with the data received from the server
                     alert(data.data || 'Login failed');
